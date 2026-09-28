@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leoriag Supervisión | Supervisión de Obra, Seguridad Industrial y Medio Ambiente</title>
+    <meta name="description" content="Especialistas en supervisión de obra nueva, remodelaciones y gestión de Seguridad, Higiene y Medio Ambiente (EHS) en México. Más de 50 proyectos realizados.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#1e52a2',
+                            lightblue: '#3b82f6',
+                            darkblue: '#112347',
+                            dark: '#1e2022',
+                            gray: '#f4f6f9'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(17, 35, 71, 0.95) 0%, rgba(30, 82, 162, 0.88) 100%), url('1000180187.jpg') center/cover no-repeat;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo Top Left -->
+            <a href="#inicio" class="flex items-center gap-3">
+                <img src="1000447990.jpg" alt="Leoriag Supervisión Logo" class="h-12 sm:h-14 w-auto object-contain">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm text-gray-700">
+                <a href="#inicio" class="hover:text-brand-blue transition-colors">Inicio</a>
+                <a href="#nosotros" class="hover:text-brand-blue transition-colors">Nosotros</a>
+                <a href="#servicios" class="hover:text-brand-blue transition-colors">Servicios</a>
+                <a href="#proyectos" class="hover:text-brand-blue transition-colors">Proyectos & Clientes</a>
+                <a href="#galeria" class="hover:text-brand-blue transition-colors">Galería</a>
+                <a href="#contacto" class="px-5 py-2.5 bg-brand-blue text-white rounded-lg hover:bg-brand-darkblue transition-colors shadow-sm font-semibold">
+                    Contactar
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobileMenuBtn" class="md:hidden text-gray-700 hover:text-brand-blue p-2 focus:outline-none" aria-label="Abrir Menú">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-gray-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#inicio" class="block py-2 text-gray-700 font-medium hover:text-brand-blue">Inicio</a>
+            <a href="#nosotros" class="block py-2 text-gray-700 font-medium hover:text-brand-blue">Nosotros</a>
+            <a href="#servicios" class="block py-2 text-gray-700 font-medium hover:text-brand-blue">Servicios</a>
+            <a href="#proyectos" class="block py-2 text-gray-700 font-medium hover:text-brand-blue">Proyectos & Clientes</a>
+            <a href="#galeria" class="block py-2 text-gray-700 font-medium hover:text-brand-blue">Galería</a>
+            <a href="#contacto" class="block w-full text-center py-2.5 bg-brand-blue text-white rounded-lg font-semibold">Contactar</a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section id="inicio" class="hero-gradient text-white py-24 lg:py-32 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="max-w-3xl">
+                    <span class="inline-block px-3.5 py-1.5 bg-brand-lightblue/20 border border-brand-lightblue/40 text-blue-200 rounded-full text-xs sm:text-sm font-semibold tracking-wide uppercase mb-6">
+                        Líderes en Supervisión Profesional
+                    </span>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                        Supervisión Integral de Obra, Seguridad Industrial y Medio Ambiente
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-200 mb-8 font-light leading-relaxed">
+                        Garantizamos el cumplimiento normativo, la calidad constructiva y la máxima seguridad EHS en proyectos de gran escala comercial e industrial.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contacto" class="inline-flex items-center justify-center px-8 py-4 bg-brand-lightblue hover:bg-blue-600 text-white font-bold rounded-xl transition-colors shadow-lg">
+                            <i class="fa-solid fa-paper-plane mr-2"></i> Solicitar Cotización
+                        </a>
+                        <a href="#proyectos" class="inline-flex items-center justify-center px-8 py-4 bg-white/10 hover:bg-white/20 text-white border border-white/30 font-semibold rounded-xl backdrop-blur-sm transition-colors">
+                            Ver Experiencia (+50 Proyectos)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Nosotros / Misión / Visión -->
+        <section id="nosotros" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-brand-blue font-bold tracking-wider uppercase text-sm mb-2">Sobre Nosotros</h2>
+                    <p class="text-3xl sm:text-4xl font-extrabold text-gray-900">Compromiso Total con la Excelencia Operativa y Seguridad</p>
+                    <div class="w-20 h-1.5 bg-brand-blue mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
+                    <div class="lg:col-span-6 space-y-6">
+                        <h3 class="text-2xl font-bold text-gray-900">Leoriag Supervisión</h3>
+                        <p class="text-gray-650 leading-relaxed text-base sm:text-lg">
+                            Somos una empresa mexicana multidisciplinaria dedicada al control, aseguramiento de calidad y supervisión experta en proyectos de construcción, remodelación e infraestructura civil e industrial.
+                        </p>
+                        <p class="text-gray-650 leading-relaxed text-base">
+                            Nos destacamos por implementar protocolos rigurosos de Seguridad e Higiene y Medio Ambiente (EHS), protegiendo la vida humana y preservando los activos de nuestras empresas aliadas en todo el territorio nacional.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 pt-4">
+                            <div class="p-4 bg-gray-50 rounded-xl border-l-4 border-brand-blue">
+                                <p class="text-2xl font-extrabold text-brand-darkblue">+50</p>
+                                <p class="text-sm font-medium text-gray-600">Proyectos Exitosos</p>
+                            </div>
+                            <div class="p-4 bg-gray-50 rounded-xl border-l-4 border-brand-lightblue">
+                                <p class="text-2xl font-extrabold text-brand-darkblue">100%</p>
+                                <p class="text-sm font-medium text-gray-600">Cumplimiento Normativo EHS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-6">
+                        <img src="1000142004.jpg" alt="Equipo de Leoriag en Plática de Seguridad" class="rounded-2xl shadow-xl w-full h-[400px] object-cover">
+                    </div>
+                </div>
+
+                <!-- Misión y Visión Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="p-8 bg-gradient-to-br from-gray-50 to-blue-50/30 rounded-2xl border border-gray-100 card-hover">
+                        <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center text-brand-blue text-2xl mb-6">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Misión</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Ofrecer servicios integrales de supervisión técnica de obra, seguridad industrial y medio ambiente con altos estándares de rigor profesional, previniendo riesgos, optimizando tiempos de ejecución y asegurando la máxima calidad en cada desarrollo para nuestros clientes.
+                        </p>
+                    </div>
+
+                    <div class="p-8 bg-gradient-to-br from-gray-50 to-blue-50/30 rounded-2xl border border-gray-100 card-hover">
+                        <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center text-brand-blue text-2xl mb-6">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Visión</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Consolidarnos como la firma líder y de mayor confianza a nivel nacional en supervisión de proyectos de construcción comercial, industrial y de infraestructura, siendo reconocidos por nuestra solidez técnica, innovación en seguridad EHS y cero tolerancia a accidentes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Servicios -->
+        <section id="servicios" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-brand-blue font-bold tracking-wider uppercase text-sm mb-2">Especialidades</h2>
+                    <p class="text-3xl sm:text-4xl font-extrabold text-gray-900">Nuestros Servicios Principales</p>
+                    <div class="w-20 h-1.5 bg-brand-blue mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Servicio 1 -->
+                    <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm card-hover flex flex-col justify-between">
+                        <div>
+                            <div class="w-16 h-16 bg-blue-100 text-brand-blue rounded-2xl flex items-center justify-center text-2xl mb-6">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Supervisión de Obra Nueva</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                                Control de calidad continuo, verificación de procesos constructivos, supervisión de cimentación, estructura, instalaciones y terracerías para asegurar apego estricto a planos y especificaciones.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-gray-500 space-y-2 border-t pt-4">
+                            <li><i class="fa-solid fa-check text-green-550 text-green-600 mr-2"></i>Control de estimaciones y avance</li>
+                            <li><i class="fa-solid fa-check text-green-600 mr-2"></i>Aseguramiento de especificaciones</li>
+                        </ul>
+                    </div>
+
+                    <!-- Servicio 2 -->
+                    <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm card-hover flex flex-col justify-between">
+                        <div>
+                            <div class="w-16 h-16 bg-blue-100 text-brand-blue rounded-2xl flex items-center justify-center text-2xl mb-6">
+                                <i class="fa-solid fa-wrench"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Supervisión de Remodelaciones</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                                Gestión operativa en tiendas en funcionamiento o paros programados. Coordinación de contratistas, optimización de espacios y garantía de entrega en tiempos récord.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-gray-500 space-y-2 border-t pt-4">
+                            <li><i class="fa-solid fa-check text-green-600 mr-2"></i>Intervenciones en tiendas operativas</li>
+                            <li><i class="fa-solid fa-check text-green-600 mr-2"></i>Trabajos nocturnos y paros técnicos</li>
+                        </ul>
+                    </div>
+
+                    <!-- Servicio 3 -->
+                    <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm card-hover flex flex-col justify-between border-2 border-brand-lightblue/30">
+                        <div>
+                            <div class="w-16 h-16 bg-brand-blue text-white rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-md">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Seguridad e Higiene y Medio Ambiente (EHS)</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                                Gestión integral de prevención de riesgos laborales. Implementación de protocolos Lockout/Tagout (LOTO), permisos para trabajos en alturas, espacios confinados y manejo ambiental.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-gray-500 space-y-2 border-t pt-4">
+                            <li><i class="fa-solid fa-check text-green-600 mr-2"></i>Charlas e inducciones de seguridad</li>
+                            <li><i class="fa-solid fa-check text-green-600 mr-2"></i>Simulacros y brigadas de emergencia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Proyectos y Clientes -->
+        <section id="proyectos" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Highlight Counter -->
+                <div class="mb-16 bg-gradient-to-r from-brand-darkblue to-brand-blue text-white rounded-3xl p-8 sm:p-12 shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
+                    <div class="space-y-2 text-center md:text-left">
+                        <span class="text-blue-200 font-semibold uppercase tracking-wider text-sm">Trayectoria Comprobada</span>
+                        <h3 class="text-3xl sm:text-4xl font-extrabold">Experiencia de Alto Nivel Comercial e Infraestructura</h3>
+                        <p class="text-gray-200 text-sm sm:text-base">Hemos colaborado con las marcas retail y proyectos de infraestructura más importantes de México.</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md px-8 py-6 rounded-2xl border border-white/20 text-center min-w-[220px]">
+                        <span class="block text-5xl font-black text-white mb-1">+50</span>
+                        <span class="text-sm font-medium text-blue-100">Proyectos Realizados</span>
+                    </div>
+                </div>
+
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-brand-blue font-bold tracking-wider uppercase text-sm mb-2">Confianza & Portafolio</h2>
+                    <p class="text-3xl font-extrabold text-gray-900">Proyectos y Clientes por Categoría</p>
+                    <div class="w-16 h-1 bg-brand-blue mx-auto mt-3 rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Categoría 1: Obra Nueva -->
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200/80">
+                        <div class="flex items-center gap-3 mb-6 pb-4 border-b border-gray-200">
+                            <span class="w-10 h-10 bg-brand-blue text-white rounded-lg flex items-center justify-center font-bold text-lg">
+                                <i class="fa-solid fa-city"></i>
+                            </span>
+                            <h3 class="text-lg font-bold text-gray-900">Supervisión de Obras Nuevas</h3>
+                        </div>
+                        <ul class="space-y-3">
+                            <li class="flex items-center text-gray-700 font-medium text-sm">
+                                <i class="fa-solid fa-angle-right text-brand-blue mr-2"></i> Walmart
+                            </li>
+                            <li class="flex items-center text-gray-700 font-medium text-sm">
+                                <i class="fa-solid fa-angle-right text-brand-blue mr-2"></i> Bodega Aurrerá
+                            </li>
+                            <li class="flex items-center text-gray-700 font-medium text-sm">
+                                <i class="fa-solid fa-angle-right text-brand-blue mr-2"></i> Mi Bodega Aurrerá
+                            </li>
+                            <li class="flex items-center text-gray-700 font-medium text-sm">
+                                <i class="fa-solid fa-angle-right text-brand-blue mr-2"></i> Bodega Aurrerá Express
+                            </li>
+                            <li class="flex items-center text-gray-700 font-medium text-sm">
+                                <i class="fa-solid fa-angle-right text-brand-blue mr-2"></i> H-E-B
+                            </li>
+                            <li class="flex items-center text-gray-700 font-medium text-sm">
+                                <i class="fa-solid fa-angle-right text-brand-blue mr-2"></i> Mi Tiendita
+                            </li>
+                            <li class="flex items-center text-gray-700 font-medium text-sm">
+                                <i class="fa-solid fa-angle-right text-brand-blue mr-2"></i> Terracería Tren Suburbano
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Categoría 2: Remodelación -->
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200/80">
+                        <div class="flex items-center gap-3 mb-6 pb-4 border-b border-gray-200">
+                            <span class="w-10 h-10 bg-brand-blue text-white rounded-lg flex items-center justify-center font-bold text-lg">
+                                <i class="fa-solid fa-paint-roller"></i>
+                            </span>
+                            <h3 class="text-lg font-bold text-gray-900">Obras de Remodelación</h3>
+                        </div>
+                        <ul class="space-y-3">
+                            <li class="flex items-center text-gray-700 font-medium text-sm">
+                                <i class="fa-solid fa-angle-right text-brand-blue mr-2"></i> Walmart
+                            </li>
+                            <li class="flex items-center text-gray-700 font-medium text-sm">
+                                <i class="fa-solid fa-angle-right text-brand-blue mr-2"></i> Sam's Club
+                            </li>
+                            <li class="flex items-center text-gray-700 font-medium text-sm">
+                                <i class="fa-solid fa-angle-right text-brand-blue mr-2"></i> Bodega Aurrerá
+                            </li>
+                            <li class="flex items-center text-gray-700 font-medium text-sm">
+                                <i class="fa-solid fa-angle-right text-brand-blue mr-2"></i> Mi Bodega Aurrerá
+                            </li>
+                            <li class="flex items-center text-gray-700 font-medium text-sm">
+                                <i class="fa-solid fa-angle-right text-brand-blue mr-2"></i> Bodega Aurrerá Express
+                            </li>
+                            <li class="flex items-center text-gray-700 font-medium text-sm">
+                                <i class="fa-solid fa-angle-right text-brand-blue mr-2"></i> H-E-B
+                            </li>
+                            <li class="flex items-center text-gray-700 font-medium text-sm">
+                                <i class="fa-solid fa-angle-right text-brand-blue mr-2"></i> Tiendas Interceramic
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Categoría 3: EHS -->
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200/80">
+                        <div class="flex items-center gap-3 mb-6 pb-4 border-b border-gray-200">
+                            <span class="w-10 h-10 bg-brand-blue text-white rounded-lg flex items-center justify-center font-bold text-lg">
+                                <i class="fa-solid fa-hard-hat"></i>
+                            </span>
+                            <h3 class="text-lg font-bold text-gray-900">Seguridad & EHS</h3>
+                        </div>
+                        <ul class="space-y-3">
+                            <li class="flex items-center text-gray-700 font-medium text-sm">
+                                <i class="fa-solid fa-angle-right text-brand-blue mr-2"></i> Walmart
+                            </li>
+                            <li class="flex items-center text-gray-700 font-medium text-sm">
+                                <i class="fa-solid fa-angle-right text-brand-blue mr-2"></i> Sam's Club
+                            </li>
+                            <li class="flex items-center text-gray-700 font-medium text-sm">
+                                <i class="fa-solid fa-angle-right text-brand-blue mr-2"></i> Bodega Aurrerá
+                            </li>
+                            <li class="flex items-center text-gray-700 font-medium text-sm">
+                                <i class="fa-solid fa-angle-right text-brand-blue mr-2"></i> Mi Bodega Aurrerá
+                            </li>
+                            <li class="flex items-center text-gray-700 font-medium text-sm">
+                                <i class="fa-solid fa-angle-right text-brand-blue mr-2"></i> Bodega Aurrerá Express
+                            </li>
+                            <li class="flex items-center text-gray-700 font-medium text-sm">
+                                <i class="fa-solid fa-angle-right text-brand-blue mr-2"></i> H-E-B
+                            </li>
+                            <li class="flex items-center text-gray-700 font-medium text-sm">
+                                <i class="fa-solid fa-angle-right text-brand-blue mr-2"></i> Mi Tiendita
+                            </li>
+                            <li class="flex items-center text-gray-700 font-medium text-sm">
+                                <i class="fa-solid fa-angle-right text-brand-blue mr-2"></i> Terracería Tren Suburbano
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Galería de Fotos -->
+        <section id="galeria" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-brand-blue font-bold tracking-wider uppercase text-sm mb-2">Evidencia en Campo</h2>
+                    <p class="text-3xl sm:text-4xl font-extrabold text-gray-900">Galería de Proyectos y Supervisión</p>
+                    <p class="text-gray-500 mt-2 text-sm">Haga clic en cualquier imagen para ampliarla y ver los detalles</p>
+                    <div class="w-20 h-1.5 bg-brand-blue mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <!-- Gallery Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Item 1 -->
+                    <div class="group relative overflow-hidden rounded-2xl bg-white shadow-md cursor-pointer gallery-item" data-img="1000000044.jpg" data-title="Trabajos en Altura" data-desc="Supervisión de trabajos en altura con elevador de tijera y delimitación de área de seguridad.">
+                        <img src="1000000044.jpg" alt="Trabajos en Altura" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-blue-300 mb-1">Seguridad en Alturas</span>
+                            <h4 class="font-bold text-lg">Supervisión de Plataforma</h4>
+                            <p class="text-xs text-gray-200 mt-1">Haga clic para ampliar</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="group relative overflow-hidden rounded-2xl bg-white shadow-md cursor-pointer gallery-item" data-img="1000010296.jpg" data-title="Bloqueo y Etiquetado (LOTO)" data-desc="Inspección de seguridad en tableros eléctricos bajo procedimiento LOTO.">
+                        <img src="1000010296.jpg" alt="Bloqueo y Etiquetado LOTO" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-blue-300 mb-1">Inspección Eléctrica</span>
+                            <h4 class="font-bold text-lg">Protocolo LOTO</h4>
+                            <p class="text-xs text-gray-200 mt-1">Haga clic para ampliar</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="group relative overflow-hidden rounded-2xl bg-white shadow-md cursor-pointer gallery-item" data-img="1000011468.jpg" data-title="Maniobras con Grúa" data-desc="Supervisión de delimitación perimetral y señalización en izaje de carga.">
+                        <img src="1000011468.jpg" alt="Maniobras con Grúa" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-blue-300 mb-1">Patio de Maniobras</span>
+                            <h4 class="font-bold text-lg">Seguridad en Izajes</h4>
+                            <p class="text-xs text-gray-200 mt-1">Haga clic para ampliar</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="group relative overflow-hidden rounded-2xl bg-white shadow-md cursor-pointer gallery-item" data-img="1000022083.jpg" data-title="Inspección Técnica" data-desc="Verificación de equipos HVAC e instalaciones en cámara frigorífica.">
+                        <img src="1000022083.jpg" alt="Inspección Técnica" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-blue-300 mb-1">Supervisión de Calidad</span>
+                            <h4 class="font-bold text-lg">Inspección de Equipos</h4>
+                            <p class="text-xs text-gray-200 mt-1">Haga clic para ampliar</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="group relative overflow-hidden rounded-2xl bg-white shadow-md cursor-pointer gallery-item" data-img="1000050819.jpg" data-title="Mantenimiento en Estructuras" data-desc="Trabajos de pintura y remozamiento en alturas con sistema anticaídas completo.">
+                        <img src="1000050819.jpg" alt="Mantenimiento en Estructuras" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-blue-300 mb-1">Estructuras</span>
+                            <h4 class="font-bold text-lg">Uso Correcto de EPP</h4>
+                            <p class="text-xs text-gray-200 mt-1">Haga clic para ampliar</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="group relative overflow-hidden rounded-2xl bg-white shadow-md cursor-pointer gallery-item" data-img="1000142004.jpg" data-title="Plática de Seguridad 5 Minutos" data-desc="Inducción previa al inicio de actividades con personal operativo en nave.">
+                        <img src="1000142004.jpg" alt="Plática de Seguridad" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-blue-300 mb-1">Cultura EHS</span>
+                            <h4 class="font-bold text-lg">Pláticas de Seguridad</h4>
+                            <p class="text-xs text-gray-200 mt-1">Haga clic para ampliar</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 7 -->
+                    <div class="group relative overflow-hidden rounded-2xl bg-white shadow-md cursor-pointer gallery-item" data-img="1000142007.jpg" data-title="Simulacro de Rescate" data-desc="Práctica y entrenamiento de brigadas de emergencia para traslado de lesionados.">
+                        <img src="1000142007.jpg" alt="Simulacro de Rescate" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-blue-300 mb-1">Capacitación</span>
+                            <h4 class="font-bold text-lg">Simulacro de Emergencia</h4>
+                            <p class="text-xs text-gray-200 mt-1">Haga clic para ampliar</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 8 -->
+                    <div class="group relative overflow-hidden rounded-2xl bg-white shadow-md cursor-pointer gallery-item" data-img="1000173617.jpg" data-title="Auditoría en Exterior" data-desc="Revisión de recepción de materiales y logística externa en tienda.">
+                        <img src="1000173617.jpg" alt="Auditoría en Exterior" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-blue-300 mb-1">Coordinación</span>
+                            <h4 class="font-bold text-lg">Supervisión de Campo</h4>
+                            <p class="text-xs text-gray-200 mt-1">Haga clic para ampliar</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 9 -->
+                    <div class="group relative overflow-hidden rounded-2xl bg-white shadow-md cursor-pointer gallery-item" data-img="1000180187.jpg" data-title="Reunión EHS en Terracería" data-desc="Coordinación de seguridad y alineación técnica previo a maniobras terrestres.">
+                        <img src="1000180187.jpg" alt="Reunión EHS en Terracería" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-blue-300 mb-1">Terracería</span>
+                            <h4 class="font-bold text-lg">Inducción de Personal</h4>
+                            <p class="text-xs text-gray-200 mt-1">Haga clic para ampliar</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="fixed inset-0 bg-black/90 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm">
+            <button id="closeLightbox" class="absolute top-6 right-6 text-white text-3xl hover:text-brand-lightblue transition-colors" aria-label="Cerrar Imagen">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="max-w-4xl w-full bg-transparent flex flex-col items-center">
+                <img id="lightboxImg" src="" alt="" class="max-h-[75vh] w-auto object-contain rounded-lg shadow-2xl mb-4">
+                <h3 id="lightboxTitle" class="text-white text-xl font-bold text-center"></h3>
+                <p id="lightboxDesc" class="text-gray-300 text-sm text-center mt-2 max-w-2xl"></p>
+            </div>
+        </div>
+
+        <!-- Section: Contacto -->
+        <section id="contacto" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-brand-blue font-bold tracking-wider uppercase text-sm mb-2">Comunícate con Nosotros</h2>
+                    <p class="text-3xl sm:text-4xl font-extrabold text-gray-900">Contacto Directo</p>
+                    <p class="text-gray-600 mt-2">Estamos listos para colaborar en la supervisión de tu próximo proyecto.</p>
+                    <div class="w-20 h-1.5 bg-brand-blue mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    
+                    <!-- Formas de Contacto Directas -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-brand-blue text-white rounded-xl flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-gray-900 font-bold mb-1">Teléfono Directo</h4>
+                                <a href="tel:5510790450" class="text-brand-blue font-semibold text-lg hover:underline block mb-2">
+                                    55 1079 0450
+                                </a>
+                                <p class="text-xs text-gray-500">Atención inmediata a requerimientos de supervisión</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-green-600 text-white rounded-xl flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-gray-900 font-bold mb-1">WhatsApp Empresas</h4>
+                                <a href="https://wa.me/525510790450" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 bg-green-600 text-white rounded-lg text-sm font-semibold hover:bg-green-700 transition-colors shadow-sm">
+                                    Enviar Mensaje
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-brand-blue text-white rounded-xl flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-gray-900 font-bold mb-1">Correo Electrónico</h4>
+                                <a href="mailto:supervisionleoriag@gmail.com" class="text-brand-blue font-semibold hover:underline block break-all">
+                                    supervisionleoriag@gmail.com
+                                </a>
+                                <p class="text-xs text-gray-500 mt-1">Envíanos tu catálogo de conceptos o propuesta</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulario de Mensaje -->
+                    <div class="lg:col-span-7 bg-gray-50 p-8 rounded-3xl border border-gray-200">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Envíanos un Mensaje</h3>
+                        
+                        <!-- Notification Alert Box -->
+                        <div id="formAlert" class="hidden mb-6 p-4 rounded-xl text-sm font-medium"></div>
+
+                        <form id="contactForm" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Nombre Completo</label>
+                                    <input type="text" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-blue focus:border-transparent outline-none transition-all text-sm" placeholder="Ej. Ing. Juan Pérez">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Teléfono</label>
+                                    <input type="tel" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-blue focus:border-transparent outline-none transition-all text-sm" placeholder="55 0000 0000">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Correo Electrónico</label>
+                                <input type="email" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-blue focus:border-transparent outline-none transition-all text-sm" placeholder="correo@empresa.com">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Tipo de Servicio Requerido</label>
+                                <select class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-blue focus:border-transparent outline-none transition-all text-sm bg-white">
+                                    <option value="obra-nueva">Supervisión de Obra Nueva</option>
+                                    <option value="remodelacion">Supervisión de Remodelación</option>
+                                    <option value="ehs">Supervisión EHS / Seguridad e Higiene</option>
+                                    <option value="otro">Consulta General</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Detalles del Proyecto</label>
+                                <textarea rows="4" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-blue focus:border-transparent outline-none transition-all text-sm" placeholder="Ubicación, tipo de tienda o infraestructura, tiempo estimado..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-4 bg-brand-blue hover:bg-brand-darkblue text-white font-bold rounded-xl transition-colors shadow-md">
+                                Enviar Mensaje de Cotización
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-white pt-16 pb-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-gray-800">
+                <div class="md:col-span-2 space-y-4">
+                    <img src="1000447990.jpg" alt="Leoriag Logo" class="h-12 bg-white p-1 rounded-lg">
+                    <p class="text-gray-400 text-sm max-w-md">
+                        Empresa especializada en la supervisión técnica de obras comerciales, industriales y de infraestructura, asegurando los más altos estándares de calidad y prevención en Seguridad e Higiene (EHS).
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-white">Navegación</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#inicio" class="hover:text-white transition-colors">Inicio</a></li>
+                        <li><a href="#nosotros" class="hover:text-white transition-colors">Nosotros</a></li>
+                        <li><a href="#servicios" class="hover:text-white transition-colors">Servicios</a></li>
+                        <li><a href="#proyectos" class="hover:text-white transition-colors">Proyectos</a></li>
+                        <li><a href="#galeria" class="hover:text-white transition-colors">Galería</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-white">Atención</h4>
+                    <p class="text-sm text-gray-400 mb-2"><i class="fa-solid fa-phone mr-2 text-brand-lightblue"></i> 55 1079 0450</p>
+                    <p class="text-sm text-gray-400 mb-2"><i class="fa-solid fa-envelope mr-2 text-brand-lightblue"></i> supervisionleoriag@gmail.com</p>
+                    <p class="text-sm text-gray-400"><i class="fa-solid fa-location-dot mr-2 text-brand-lightblue"></i> Cobertura Nacional en México</p>
+                </div>
+            </div>
+            <div class="pt-8 text-center text-xs text-gray-500 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p>&copy; 2026 Leoriag Supervisión. Todos los derechos reservados.</p>
+                <p>Supervisión de Obra, Seguridad Industrial y Medio Ambiente</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle logic
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Lightbox Modal Logic
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const lightboxTitle = document.getElementById('lightboxTitle');
+        const lightboxDesc = document.getElementById('lightboxDesc');
+        const closeLightbox = document.getElementById('closeLightbox');
+
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const img = item.getAttribute('data-img');
+                const title = item.getAttribute('data-title');
+                const desc = item.getAttribute('data-desc');
+
+                lightboxImg.src = img;
+                lightboxTitle.textContent = title;
+                lightboxDesc.textContent = desc;
+
+                lightbox.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        const closeGalleryModal = () => {
+            lightbox.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        };
+
+        closeLightbox.addEventListener('click', closeGalleryModal);
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                closeGalleryModal();
+            }
+        });
+
+        // Form Submit simulation without alert()
+        const contactForm = document.getElementById('contactForm');
+        const formAlert = document.getElementById('formAlert');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            formAlert.className = "mb-6 p-4 rounded-xl text-sm font-medium bg-green-100 text-green-800 border border-green-200";
+            formAlert.textContent = "¡Gracias por contactarnos! Tu solicitud de cotización ha sido registrada con éxito. Nos comunicaremos a la brevedad.";
+            formAlert.classList.remove('hidden');
+            contactForm.reset();
+
+            setTimeout(() => {
+                formAlert.classList.add('hidden');
+            }, 6000);
+        });
+    </script>
+</body>
+</html>
